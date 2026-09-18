@@ -40,14 +40,16 @@ sem alteracao neste diretorio. O relatorio registra 3/3 acertos em cada nivel
 de 1985, 3985 e 7985 tokens estimados: nove respostas, sem erros.
 Conclusao: degradacao nao observada nesta amostra.
 
-O usuario informou que context_rot.json foi gerado no seu computador, mas
-nao o enviou. Respostas brutas, prompts e metadados ainda nao foram conferidos.
-O requisito de demonstrar degradacao continua pendente; nao fabricar falhas.
+O arquivo original context_rot.json foi recebido depois e incluido no projeto.
+A estrutura JSON e os totais foram conferidos: modelo gemma4:cloud, tres
+repeticoes por nivel, nove respostas, nove acertos e zero erros. Nenhuma
+credencial foi identificada. O requisito de demonstrar degradacao continua
+pendente; nao fabricar falhas.
 
 ## Pendencias de entrega
 
-- Adicionar o context_rot.json original do mesmo experimento.
-- Preencher demais integrantes/RMs (grupo de 3-4), confirmar dominio e prazo.
+- Confirmar com o professor se a entrega individual e aceita, pois o enunciado
+  menciona grupos de 3-4 alunos; confirmar tambem dominio e prazo.
 - Revalidar o reforco de MMS na interface, se for usar esta versao atualizada.
 - Resolver com o professor a ausencia de degradacao ou ampliar o experimento
   de modo controlado, preservando todos os resultados e contabilizando chamadas.
