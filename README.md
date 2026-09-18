@@ -9,9 +9,6 @@ Prompt Engineering and Artificial Intelligence - FIAP - 2o semestre 2026.
 | Integrante | Nome completo | RM |
 |---|---|---|
 | 1 | Matheus Anciães Patelli | 567261 |
-| 2 | PREENCHER | PREENCHER |
-| 3 | PREENCHER | PREENCHER |
-| 4, se houver | PREENCHER ou remover linha | PREENCHER |
 
 Grupo de 3-4 alunos. Somente o lider envia o ZIP pelo Teams ate 23:55 do dia da Aula 05. O PDF nao informa uma data de calendario: confirmar com a turma. A Aula 04 apresenta o trabalho; nao ha apresentacao ao vivo do grupo. Confirmar registro/exclusividade do dominio com o professor: o PDF diz que, em caso de dominios iguais, apenas o primeiro entregue e aceito.
 
