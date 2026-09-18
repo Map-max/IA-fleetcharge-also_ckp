@@ -10,7 +10,7 @@ Prompt Engineering and Artificial Intelligence - FIAP - 2o semestre 2026.
 |---|---|---|
 | 1 | Matheus Anciães Patelli | 567261 |
 
-Grupo de 3-4 alunos. Somente o lider envia o ZIP pelo Teams ate 23:55 do dia da Aula 05. O PDF nao informa uma data de calendario: confirmar com a turma. A Aula 04 apresenta o trabalho; nao ha apresentacao ao vivo do grupo. Confirmar registro/exclusividade do dominio com o professor: o PDF diz que, em caso de dominios iguais, apenas o primeiro entregue e aceito.
+Trabalho desenvolvido individualmente. O enunciado menciona grupos de 3-4 alunos; confirmar com o professor se a entrega individual esta autorizada. O envio e pelo Teams ate 23:55 do dia da Aula 05. O PDF nao informa uma data de calendario: confirmar com a turma. A Aula 04 apresenta o trabalho; nao ha apresentacao ao vivo. Confirmar registro/exclusividade do dominio com o professor: o PDF diz que, em caso de dominios iguais, apenas o primeiro entregue e aceito.
 
 ## Dominio
 
@@ -29,7 +29,7 @@ O dominio deve ser mantido no CKP02 (RAG) e CKP03 (agente). Este e um novo pacot
 | XML tagging e persona | persona, dominio, regras, referencia, resposta | Implementado |
 | Pydantic v2 >=4 campos | AnaliseConsulta, oito campos e validadores | Implementado |
 | Memoria em >=5 turnos | Roteiro manual de cinco turnos; script opcional de seis | Registro em evidence/VALIDACAO_USUARIO_2026-09-18.md |
-| Context rot real em tabela | app/context_rot.py | Nove acertos relatados; degradacao nao observada; JSON original pendente |
+| Context rot real em tabela | app/context_rot.py | JSON e tabela incluidos; 9/9 acertos, degradacao nao observada |
 | Pacote local e Gradio | python -m app.main | Interface executada pelo usuario com respostas |
 | Nomes e RMs | tabela acima | Pendente |
 | Diferencial: tokens/metricas | tiktoken e acerto de quatro campos | Tabela recebida com tokens estimados e acertos |
@@ -108,7 +108,7 @@ O roteiro usa seis turnos sinteticos sobre Atlas, T01 e saida19:00. Salva pergun
 
 O programa usa tres contextos de aproximadamente2000/4000/8000 tokens totais estimados, tres repeticoes cada (nove chamadas). Memoria do chat continua1200: sao parametros distintos. System prompt, pergunta, fatos relevantes e gabarito permanecem constantes; aumentam apenas os distratores. O experimento nao poda os fatos localmente. Mede extracao de quatro campos, salva respostas brutas, erros, latencias e metadados, e gera uma tabela Markdown.
 
-**O usuario executou o experimento e forneceu `evidence/context_rot.md`.** Foram registrados 3/3 acertos em cada nivel de 1985, 3985 e 7985 tokens estimados, sem erros: degradacao nao observada nesta amostra. O JSON original ainda deve ser acrescentado para conferir respostas brutas e metadados. Nao repetir automaticamente o teste ja realizado.
+**O usuario executou o experimento e forneceu `evidence/context_rot.md` e `evidence/context_rot.json`.** Foram registrados 3/3 acertos em cada nivel de 1985, 3985 e 7985 tokens estimados, sem erros: degradacao nao observada nesta amostra. O JSON preserva prompts, respostas, metadados e limitacoes. Nao repetir automaticamente o teste ja realizado.
 
 O requisito de demonstrar degradacao real permanece pendente. Discutir uma extensao controlada ou a interpretacao com o professor. Nao remover fatos, inventar erros ou escolher apenas tentativas ruins para fabricar a conclusao. Falha de rede/autenticacao e perda por poda nao sao prova de context rot. Tres repeticoes sao exploratorias, nao uma conclusao estatistica robusta.
 
@@ -132,9 +132,9 @@ Nove testes locais passaram na preparacao, incluindo construcao da interface. Fo
 
 Antes de entregar:
 
-1. Preencher nomes/RMs e confirmar dominio e data da Aula05.
+1. Confirmar com o professor a entrega individual, o dominio e a data da Aula05.
 2. Conferir o reforco da regra MMS no chat e no JSON da versao atualizada.
-3. Acrescentar o context_rot.json original e resolver a pendencia de degradacao com o professor; preservar a evidencia manual de memoria ja registrada.
+3. Resolver a pendencia de degradacao com o professor; preservar o JSON, a tabela e a evidencia manual de memoria.
 4. Conferir que nenhum arquivo contem chave ou dados pessoais reais de operadores.
 5. Gerar o ZIP com `python package_submission.py`. O empacotador inclui somente app/, tests/, evidence/, README, requirements e .env.example, excluindo caches e .env. Inspecionar o ZIP antes de o lider enviar.
 
